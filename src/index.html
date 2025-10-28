@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Filmes - TMDB API</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gray-100 flex items-center justify-center">
+
+    <main class="bg-white shadow-lg rounded-lg p-8 w-full max-w-3xl">
+        <div class="text-center mb-6">
+            <h1 class="text-2xl font-bold text-cyan-600 mb-2">🎬 Busca de Filmes</h1>
+            <p class="text-gray-600 mb-4">Pesquise filmes usando a API do The Movie Database.</p>
+            
+            <div class="flex gap-2 justify-center">
+                <input 
+                    type="text" 
+                    id="movieInput" 
+                    placeholder="Digite o nome do filme..." 
+                    class="border border-gray-300 rounded-lg px-4 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition-all"
+                >
+                <button 
+                    id="btnSearch" 
+                    class="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-4 py-2 rounded-lg transition"
+                >
+                    Buscar
+                </button>
+            </div>
+        </div>
+
+        <div id="response" class="flex flex-col gap-4 hidden"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
